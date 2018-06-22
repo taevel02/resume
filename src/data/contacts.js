@@ -30,6 +30,12 @@ export default [
   },
 
   {
+    text: '경기도 남양주시 진접읍',
+    icon: 'home',
+    href: 'https://goo.gl/maps/UVS8VLB1TVS2'
+  },
+
+  {
     text: '2002년 3월 15일',
     icon: 'birthday-cake',
     href: '#'

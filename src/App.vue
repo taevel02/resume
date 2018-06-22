@@ -6,6 +6,7 @@
 
     section.section: .container: .columns
       .column.is-3
+        resume-bio
         resume-skills
         resume-awards
         resume-contacts
@@ -18,6 +19,7 @@ import 'bulma/css/bulma.css'
 import 'font-awesome/css/font-awesome.css'
 import WebFont from 'webfontloader'
 
+import ResumeBio from './components/Bio.vue'
 import ResumeSkills from './components/Skills.vue'
 import ResumeAwards from './components/Awards.vue'
 import ResumeContacts from './components/Contacts.vue'
@@ -25,6 +27,7 @@ import ResumeTimeline from './components/Timeline.vue'
 
 export default {
   components: {
+    ResumeBio,
     ResumeSkills,
     ResumeAwards,
     ResumeContacts,
