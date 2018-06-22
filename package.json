@@ -1,0 +1,46 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Taehoon Kwon's Résumé page",
+  "main": "index.html",
+  "scripts": {
+    "test": "yarn run lint && yarn run build",
+    "lint": "standard --plugin html '**/*.{js,vue}'",
+    "build": "parcel build index.html --no-minify",
+    "start": "parcel index.html --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taehoon02/resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Taehoon <kth020315@naver.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taehoon02/resume/issues"
+  },
+  "homepage": "https://github.com/taehoon02/resume#readme",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "1.3.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint-plugin-html": "^4.0.3",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.8.1",
+    "pug": "^2.0.3",
+    "standard": "^11.0.1",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "font-awesome": "^4.7.0",
+    "vue": "^2.5.16",
+    "vue-hot-reload-api": "^2.3.0",
+    "vue-router": "^3.0.1",
+    "webfontloader": "^1.6.28"
+  }
+}
