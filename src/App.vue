@@ -2,7 +2,7 @@
   #app: main
     section.hero.is-dark.is-bold: .hero-body: .container
       h1.title Taehoon Kwon
-      h2.subtitle Front-end web developer / Kotlin android developer
+      h2.subtitle Front-end web developer / Android developer
 
     section.section: .container: .columns
       .column.is-3
