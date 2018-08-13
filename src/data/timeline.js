@@ -2,6 +2,12 @@ export default [
   {
     year: 2018,
     projects: [{
+      name: 'weaver',
+      href: 'https://github.com/taehoon02/weaver',
+      period: '2018.07 -',
+      description: '바다 생태계를 보존하기 위한 산호 환경 조성 로봇 프로젝트',
+      tags: ['vue.js', 'node.js', 'firebase', 'arduino', 'robot']
+    },{
       name: 'dimibob',
       href: 'https://github.com/taehoon02/dimibob',
       period: '2018.06',
