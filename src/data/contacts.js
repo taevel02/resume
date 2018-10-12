@@ -6,15 +6,15 @@ export default [
   },
 
   {
-    text: 'taehoon02.github.io',
+    text: 'b.taevel.kr',
     icon: 'link',
-    href: 'https://taehoon02.github.io'
+    href: 'https://b.taevel.kr'
   },
 
   {
-    text: 'kth020315@naver.com',
+    text: 'taevel02@gmail.com',
     icon: 'envelope-o',
-    href: 'mailto:kth020315@naver.com'
+    href: 'mailto:taevel02@gmail.com'
   },
 
   {
@@ -27,12 +27,6 @@ export default [
     text: '한국디지털미디어고등학교',
     icon: 'graduation-cap',
     href: 'https://dimigo.hs.kr'
-  },
-
-  {
-    text: '경기도 남양주시 진접읍',
-    icon: 'home',
-    href: 'https://goo.gl/maps/UVS8VLB1TVS2'
   },
 
   {

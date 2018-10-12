@@ -1,15 +1,14 @@
 <template lang="pug">
   #app: main
     section.hero.is-dark.is-bold: .hero-body: .container
-      h1.title Taehoon Kwon
-      h2.subtitle Front-end web developer / Android developer
+      h1.title Taehoon Kwon (Jay han)
+      h2.subtitle Front-end web developer
 
     section.section: .container: .columns
       .column.is-3
-        resume-bio
         resume-skills
-        resume-awards
         resume-contacts
+        resume-awards
       .column.is-8.is-offset-1
         resume-timeline
 </template>
@@ -19,18 +18,16 @@ import 'bulma/css/bulma.css'
 import 'font-awesome/css/font-awesome.css'
 import WebFont from 'webfontloader'
 
-import ResumeBio from './components/Bio.vue'
-import ResumeSkills from './components/Skills.vue'
-import ResumeAwards from './components/Awards.vue'
-import ResumeContacts from './components/Contacts.vue'
-import ResumeTimeline from './components/Timeline.vue'
+import ResumeSkills from './components/Skills'
+import ResumeAwards from './components/Awards'
+import ResumeContacts from './components/Contacts'
+import ResumeTimeline from './components/Timeline'
 
 export default {
   components: {
-    ResumeBio,
     ResumeSkills,
-    ResumeAwards,
     ResumeContacts,
+    ResumeAwards,
     ResumeTimeline
   },
 

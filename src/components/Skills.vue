@@ -7,7 +7,7 @@
 <script>
   export default {
     data: () => ({
-      skills: ['vue.js', 'es6', 'node.js', 'sass', 'BEM', 'kotlin', 'android', 'firebase']
+      skills: ['vue.js', 'node.js', 'sass', 'webpack', 'mongodb', 'firebase']
     })
   }
 </script>

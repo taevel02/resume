@@ -1,6 +1,6 @@
 <template lang="pug">
   .content: .projects(v-for='history of timeline')
-    p.title.is-4 {{ history.year }}년
+    p.title.is-4 {{ history.year }}
     .project(v-for='project in history.projects')
       .project__icons.icon: i.project__icon.fa.fa-circle-o
       .project__content
