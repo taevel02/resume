@@ -1,4 +1,5 @@
-export default [{
+export default [
+  {
     year: 2018,
     projects: [{
       name: 'weaver',
@@ -37,9 +38,7 @@ export default [{
       description: 'MCBE Script: 건축을 쉽게 도와주는 도구',
       tags: ['javascript', 'modpe']
     }]
-  },
-
-  {
+  }, {
     year: 2017,
     projects: [{
       name: 'led-cube',
@@ -54,9 +53,7 @@ export default [{
       description: 'MCPE Script: 다양한 기능을 제공해주는 에디터',
       tags: ['javascript', 'modpe']
     }]
-  },
-
-  {
+  }, {
     year: 2016,
     projects: [{
       name: 'subject',
