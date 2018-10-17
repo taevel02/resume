@@ -18,4 +18,4 @@ jobs:
             - ./node_modules
       - run:
           name: Run test
-          command: yarn test
+          command: yarn start
