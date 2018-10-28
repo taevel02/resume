@@ -2,11 +2,29 @@ export default [
   {
     year: 2018,
     projects: [{
+      name: 'new-weaver',
+      href: 'https://github.com/taehoon02/new-weaver-front',
+      period: '2018.10 -',
+      description: '바다 생태계를 보존하기 위한 산호 환경 조성 로봇 프로젝트 - NEW',
+      tags: ['vue.js', 'firebase', 'arduino', 'robot']
+    }, {
+      name: 'for-the-children',
+      href: 'https://github.com/taehoon02/for-the-children',
+      period: '2018.10',
+      description: '청소년 청원 플랫폼',
+      tags: ['vue.js', 'firebase']
+    }, {
+      name: 'green-tea-bingsu',
+      href: 'https://github.com/taehoon02/green-tea-bingsu',
+      period: '2018.10',
+      description: '도서관 열람실 관리 플랫폼 / ICT 메이커톤 1위 수상작',
+      tags: ['vue.js', 'firebase', 'arduino']
+    }, {
       name: 'weaver',
       href: 'https://github.com/taehoon02/weaver',
-      period: '2018.07 -',
+      period: '2018.07 - 08',
       description: '바다 생태계를 보존하기 위한 산호 환경 조성 로봇 프로젝트',
-      tags: ['vue.js', 'node.js', 'firebase', 'arduino', 'robot']
+      tags: ['vue.js', 'firebase', 'arduino', 'robot']
     }, {
       name: 'dimibob',
       href: 'https://github.com/taehoon02/dimibob',
