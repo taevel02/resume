@@ -17,53 +17,53 @@ export default { data: () => ({ timeline }) }
 </script>
 
 <style lang="scss">
-  .project {
-    display: flex;
-    position: relative;
-    margin-bottom: 1.6rem;
+.project {
+  display: flex;
+  position: relative;
+  margin-bottom: 1.6rem;
 
-    &:not(:last-child)::before {
-      content: '';
-      background-color: #dbdbdb;
+  &:not(:last-child)::before {
+    content: '';
+    background-color: #dbdbdb;
 
-      width: 0.2em;
-      height: 100%;
+    width: 2pt;
+    height: 100%;
 
-      top: 1.7em;
-      left: 0.63em;
-      position: absolute;
-    }
-
-    &__icons {
-      padding-top: 0.4em;
-      flex: 0 0 auto;
-    }
-
-    &__icon {
-      color: #777;
-    }
-
-    &__content {
-      flex: 1 1 auto;
-      padding: 0 0 0.2rem 1.5rem;
-    }
-
-    &__name {
-      font-size: 1.2em;
-    }
-
-    &__period {
-      color: #b5b5b5;
-      margin-bottom: 0.5em !important;
-    }
-
-    &__tags {
-      margin-top: -0.5em;
-    }
-
-    &__tag:not(:last-of-type) {
-      margin-right: 0.5em;
-      margin-bottom: 0.5em;
-    }
+    top: 1.8em;
+    left: 0.65em;
+    position: absolute;
   }
+
+  &__icons {
+    padding-top: 0.4em;
+    flex: 0 0 auto;
+  }
+
+  &__icon {
+    color: #777;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    padding: 0 0 0.2rem 1.5rem;
+  }
+
+  &__name {
+    font-size: 1.2em;
+  }
+
+  &__period {
+    color: #b5b5b5;
+    margin-bottom: 0.5em !important;
+  }
+
+  &__tags {
+    margin-top: -0.5em;
+  }
+
+  &__tag:not(:last-of-type) {
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
 </style>

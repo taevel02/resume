@@ -8,7 +8,7 @@
       .column.is-3
         resume-skills
         resume-contacts
-        resume-awards
+        // resume-awards
       .column.is-8.is-offset-1
         resume-timeline
 </template>

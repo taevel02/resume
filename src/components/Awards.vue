@@ -10,7 +10,7 @@ export default { data: () => ({ awards }) }
 </script>
 
 <style lang="scss" scoped>
-  .level.is-mobile .level.left {
-    border: 0.5em;
-  }
+.level:not(:last-child) {
+  margin-bottom: 1rem;
+}
 </style>

@@ -12,7 +12,7 @@ export default { data: () => ({ contacts }) }
 </script>
 
 <style lang="scss" scoped>
-  .level:not(:last-child) {
-    margin-bottom: 1rem;
-  }
+.level:not(:last-child) {
+  margin-bottom: 1rem;
+}
 </style>

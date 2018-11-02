@@ -17,13 +17,13 @@ export default [
       name: 'green-tea-bingsu',
       href: 'https://github.com/taehoon02/green-tea-bingsu',
       period: '2018.10',
-      description: '도서관 열람실 관리 플랫폼 / ICT 메이커톤 1위 수상작',
+      description: '도서관 열람실 관리 플랫폼 / ICT 메이커톤 대상',
       tags: ['vue.js', 'firebase', 'arduino']
     }, {
       name: 'weaver',
       href: 'https://github.com/taehoon02/weaver',
       period: '2018.07 - 08',
-      description: '바다 생태계를 보존하기 위한 산호 환경 조성 로봇 프로젝트',
+      description: '바다 생태계를 보존하기 위한 산호 환경 조성 로봇 / 한국로봇올림피아드 동상',
       tags: ['vue.js', 'firebase', 'arduino', 'robot']
     }, {
       name: 'dimibob',
@@ -41,7 +41,7 @@ export default [
       name: 'clober',
       href: 'https://github.com/taehoon02/clober',
       period: '2018.05',
-      description: '스타트업 위크엔드 출품작',
+      description: '행복을 찾아주는 커뮤니티 / 2018 스타트업 위크엔드 우수상',
       tags: ['java', 'android', 'firebase']
     }, {
       name: 'manito_game',
