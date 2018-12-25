@@ -2,7 +2,7 @@ export default [
   {
     year: 2018,
     projects: [{
-      name: 'new-weaver',
+      name: 'movies',
       href: 'https://github.com/taehoon02/movies-server',
       period: '2018.12',
       description: '영화 추천 API',
@@ -54,6 +54,12 @@ export default [
       href: 'https://github.com/taehoon02/manito_game',
       period: '2018.04',
       description: '수기로 뽑는 마니또를 온라인에서 뽑을 수 있도록 개선한 서비스',
+      tags: ['semantic', 'javascript']
+    }, {
+      name: 'brainstorming_api',
+      href: 'https://github.com/taehoon02/Brainstorming_frontend',
+      period: '2018.04 - 12',
+      description: '브레인스토밍을 서포트해주는 서비스',
       tags: ['semantic', 'javascript']
     }, {
       name: 'ModPE_WorldEdit',
