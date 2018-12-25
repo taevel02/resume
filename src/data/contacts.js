@@ -6,7 +6,7 @@ export default [
   },
 
   {
-    text: 'b.taevel.kr',
+    text: 'cookdeveloper.tistory.com',
     icon: 'link',
     href: 'https://cookdeveloper.tistory.com'
   },
