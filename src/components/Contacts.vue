@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import contacts from '../data/contacts'
-export default { data: () => ({ contacts }) }
+import contacts from "../data/contacts";
+export default { data: () => ({ contacts }) };
 </script>
 
 <style lang="scss" scoped>

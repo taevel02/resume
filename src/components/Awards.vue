@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import awards from '../data/awards'
-export default { data: () => ({ awards }) }
+import awards from "../data/awards";
+export default { data: () => ({ awards }) };
 </script>
 
 <style lang="scss" scoped>

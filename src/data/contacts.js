@@ -8,7 +8,7 @@ export default [
   {
     text: 'b.taevel.kr',
     icon: 'link',
-    href: 'https://b.taevel.kr'
+    href: 'https://cookdeveloper.tistory.com'
   },
 
   {

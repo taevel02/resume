@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import timeline from '../data/timeline'
-export default { data: () => ({ timeline }) }
+import timeline from "../data/timeline";
+export default { data: () => ({ timeline }) };
 </script>
 
 <style lang="scss">
@@ -23,7 +23,7 @@ export default { data: () => ({ timeline }) }
   margin-bottom: 1.6rem;
 
   &:not(:last-child)::before {
-    content: '';
+    content: "";
     background-color: #dbdbdb;
 
     width: 2pt;

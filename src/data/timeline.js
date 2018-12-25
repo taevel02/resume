@@ -3,9 +3,15 @@ export default [
     year: 2018,
     projects: [{
       name: 'new-weaver',
+      href: 'https://github.com/taehoon02/movies-server',
+      period: '2018.12',
+      description: '영화 추천 API',
+      tags: ['graphql']
+    }, {
+      name: 'new-weaver',
       href: 'https://github.com/taehoon02/new-weaver-front',
-      period: '2018.10 -',
-      description: '바다 생태계를 보존하기 위한 산호 환경 조성 로봇 프로젝트 - NEW',
+      period: '2018.10 - 12',
+      description: '바다 생태계를 보존하기 위한 산호 환경 조성 로봇 프로젝트 NEW',
       tags: ['vue.js', 'firebase', 'arduino', 'robot']
     }, {
       name: 'for-the-children',

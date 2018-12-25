@@ -1,7 +1,7 @@
 <template lang="pug">
   #app: main
     section.hero.is-dark.is-bold: .hero-body: .container
-      h1.title Taehoon Kwon (Jay han)
+      h1.title Taehoon Kwon (Jay)
       h2.subtitle Front-end web developer
 
     section.section: .container: .columns
