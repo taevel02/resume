@@ -11,11 +11,9 @@ export default {
     skills: [
       "vue.js",
       "react.js",
-      "node.js",
       "sass",
       "babel",
-      "graphql",
-      "firebase"
+      "webpack"
     ]
   })
 };
@@ -25,5 +23,9 @@ export default {
 <style lang="scss" scoped>
 .tag {
   margin: 0.5em;
+}
+
+h2 {
+  color: #1f92cc;
 }
 </style>

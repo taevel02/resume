@@ -1,8 +1,11 @@
 <template>
   <div class="content">
     <h2>Awards</h2>
-    <div class="level is-mobile" v-for="award in awards">
-      <div class="level left">{{ award }}</div>
+    <div class="awards" v-for="history of awards">
+      <!-- {{ history.year }} -->
+      <div class="level" v-for="award in history.awards">
+        {{ award }}
+      </div>
     </div>
   </div>
 </template>
@@ -14,6 +17,10 @@ export default { data: () => ({ awards }) };
 
 <style lang="scss" scoped>
 .level:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+h2 {
+  color: #1f92cc;
 }
 </style>
