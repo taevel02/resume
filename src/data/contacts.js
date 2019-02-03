@@ -1,37 +1,26 @@
 export default [
   {
+    text: '2002. 03. 15',
+    href: '#'
+  },
+
+  {
     text: '@Taehoon',
-    icon: 'github-alt',
     href: 'https://github.com/taehoon02'
   },
 
   {
-    text: 'cookdeveloper.tistory.com',
-    icon: 'link',
-    href: 'https://cookdeveloper.tistory.com'
+    text: '+82 1052376809',
+    href: 'tel:+821052376809'
   },
 
   {
     text: 'taevel02@gmail.com',
-    icon: 'envelope-o',
     href: 'mailto:taevel02@gmail.com'
   },
 
   {
-    text: '(+82) 10-5237-6809',
-    icon: 'phone',
-    href: 'tel:821052376809'
+    text: '경기도 남양주시 진접읍',
+    href: 'https://goo.gl/maps/D24e6f1wpNw'
   },
-
-  {
-    text: '한국디지털미디어고등학교',
-    icon: 'graduation-cap',
-    href: 'https://dimigo.hs.kr'
-  },
-
-  {
-    text: '2002년 3월 15일',
-    icon: 'birthday-cake',
-    href: '#'
-  }
 ]
