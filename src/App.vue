@@ -5,14 +5,23 @@
           <div class="container">
               <div class="columns">
                   <div class="column is-3">
-                    <h1 class="title">KWON TAEHOON</h1>
+                    <h1 class="title">
+                      <div class="first name">KWON</div>
+                      <div class="second name">TAEHOON</div>
+                    </h1>
                     <h2 class="subtitle">FRONT-END WEB DEVELOPER</h2>
+                    <!-- <h2 class="subtitle">
+                      <div class="first job">PHYSICAL EDUCATION TEACHER</div>
+                      <div class="second job">FRONT-END WEB DEVELOPER</div>
+                    </h2> -->
                   </div>
                   <div class="column is-8 is-offset-1">
                       <resume-contacts></resume-contacts>
-                      <resume-skills></resume-skills>
+                      <resume-objectives></resume-objectives>
                       <resume-awards></resume-awards>
-                      <resume-timeline></resume-timeline>
+                      <resume-experience></resume-experience>
+                      <resume-skills></resume-skills>
+                      <!-- <resume-timeline></resume-timeline> -->
                   </div>
               </div>
           </div>
@@ -30,13 +39,17 @@ import ResumeSkills from './components/Skills'
 import ResumeAwards from './components/Awards'
 import ResumeContacts from './components/Contacts'
 import ResumeTimeline from './components/Timeline'
+import ResumeObjectives from './components/Objectives'
+import ResumeExperience from './components/Experience'
 
 export default {
   components: {
     ResumeSkills,
     ResumeContacts,
     ResumeAwards,
-    ResumeTimeline
+    ResumeTimeline,
+    ResumeObjectives,
+    ResumeExperience
   },
 
   created () {
@@ -50,18 +63,44 @@ export default {
 }
 </script>
 
-<style>
-  *:focus {
-    outline: none;
-  }
+<style lang="scss">
+*:focus {
+  outline: none;
+}
 
-  #app {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+  color: #424244;
 
-  main {
-    flex: 1 0 auto;
+  &:not(:last-child)::before {
+    content: "";
+    background-color: #dbdbdb;
+
+    width: 1pt;
+    height: 90%;
+
+    top: 3.1em;
+    left: 40em;
+    position: absolute;
   }
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+a {
+  color: #424244;
+}
+
+.name {
+  text-align: justify;
+}
+
+.first {
+  color: #1f92cc;
+}
 </style>
