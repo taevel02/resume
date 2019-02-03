@@ -1,16 +1,24 @@
-<template lang="pug">
-  #app: main
-    section.hero.is-dark.is-bold: .hero-body: .container
-      h1.title Taehoon Kwon (Jay)
-      h2.subtitle Front-end web developer
-
-    section.section: .container: .columns
-      .column.is-3
-        resume-skills
-        resume-contacts
-        // resume-awards
-      .column.is-8.is-offset-1
-        resume-timeline
+<template>
+  <div id="app">
+    <main>
+      <section class="section">
+          <div class="container">
+              <div class="columns">
+                  <div class="column is-3">
+                    <h1 class="title">KWON TAEHOON</h1>
+                    <h2 class="subtitle">FRONT-END WEB DEVELOPER</h2>
+                  </div>
+                  <div class="column is-8 is-offset-1">
+                      <resume-contacts></resume-contacts>
+                      <resume-skills></resume-skills>
+                      <resume-awards></resume-awards>
+                      <resume-timeline></resume-timeline>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </main>
+  </div>
 </template>
 
 <script>

@@ -1,14 +1,17 @@
-<template lang="pug">
-  .content: .projects(v-for='history of timeline')
-    p.title.is-4 {{ history.year }}
-    .project(v-for='project in history.projects')
-      .project__icons.icon: i.project__icon.fa.fa-circle-o
-      .project__content
-        a.project__name(:href='project.href') {{ project.name }}
-        p.project__period {{ project.period }}
-        p.project__description {{ project.description }}
-        p.project__tags
-          span.project__tag.tag(v-for='s in project.tags') {{ s }}
+<template>
+  <div class="content">
+    <div class="projects" v-for="history of timeline">
+      <p class="title is-4">{{ history.year }}</p>
+      <div class="project" v-for="project in history.projects">
+        <div class="project__icons icon"><i class="project__icon fa fa-circle-o"></i></div>
+        <div class="project__content"><a class="project__name" :href="project.href">{{ project.name }}</a>
+          <p class="project__period">{{ project.period }}</p>
+          <p class="project__description">{{ project.description }}</p>
+          <p class="project__tags"><span class="project__tag tag" v-for="s in project.tags">{{ s }}</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

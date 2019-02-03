@@ -1,7 +1,8 @@
-<template lang="pug">
-  .content
-    h2 Skills
-    .tag(v-for='skill in skills') {{ skill }}
+<template>
+  <div class="content">
+    <h2>Skills</h2>
+    <div class="tag" v-for="skill in skills">{{ skill }}</div>
+  </div>
 </template>
 
 <script>

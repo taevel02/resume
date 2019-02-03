@@ -1,7 +1,10 @@
-<template lang="pug">
-  .content
-    h2 Awards
-    .level.is-mobile(v-for='award in awards'): .level.left {{ award }}
+<template>
+  <div class="content">
+    <h2>Awards</h2>
+    <div class="level is-mobile" v-for="award in awards">
+      <div class="level left">{{ award }}</div>
+    </div>
+  </div>
 </template>
 
 <script>
