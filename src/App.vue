@@ -78,7 +78,7 @@ export default {
     height: 90%;
 
     top: 3.1em;
-    left: 40em;
+    left: 32%;
     position: absolute;
   }
 }
