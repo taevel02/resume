@@ -10,10 +10,6 @@
                       <div class="second name">TAEHOON</div>
                     </h1>
                     <h2 class="subtitle">FRONT-END WEB DEVELOPER</h2>
-                    <!-- <h2 class="subtitle">
-                      <div class="first job">PHYSICAL EDUCATION TEACHER</div>
-                      <div class="second job">FRONT-END WEB DEVELOPER</div>
-                    </h2> -->
                   </div>
                   <div class="column is-8 is-offset-1">
                       <resume-contacts></resume-contacts>
@@ -21,7 +17,6 @@
                       <resume-awards></resume-awards>
                       <resume-experience></resume-experience>
                       <resume-skills></resume-skills>
-                      <!-- <resume-timeline></resume-timeline> -->
                   </div>
               </div>
           </div>
