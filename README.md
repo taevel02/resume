@@ -1,4 +1,7 @@
 # resume
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/taehoon02/resume.svg)](https://greenkeeper.io/)
+
 Taehoon Kwon's résumé page
 
 ## Installation
