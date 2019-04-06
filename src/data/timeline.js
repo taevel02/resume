@@ -1,5 +1,15 @@
 export default [
   {
+    year: 2019,
+    projects: [{
+      name: 'dimigoin-front',
+      href: 'https://github.com/dimigoin/dimigoin-front',
+      period: '2019.2 -',
+      description: '교내 인트라넷 서비스',
+      tags: ['vue.js', 'webpack', 'babel', 'spa']
+    }]
+  },
+  {
     year: 2018,
     projects: [{
       name: 'movies',
