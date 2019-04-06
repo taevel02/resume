@@ -1,21 +1,44 @@
-version: 2
+version: 2.1
+
 jobs:
-  build:
-    docker:
-      - image: circleci/node:8.11.2
+  install:
+    executor: default
     steps:
       - checkout
       - restore_cache:
-          name: Restore dependencies
-          key: yarn-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          keys:
+            - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
+            - v1-deps-{{ .Branch }}
+            - v1-deps
       - run:
-          name: Install dependencies
-          command: yarn install
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
       - save_cache:
-          name: Save dependencies
-          key: yarn-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
-            - ./node_modules
-      - run:
-          name: Run test
-          command: yarn build
+            - ~/.cache
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
+  build:
+    executor: default
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: yarn run build
+      - store_artifacts:
+          path: ~/project/resume/dist
+          destination: dist
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project
+
+workflows:
+  test-and-deploy:
+    jobs:
+      - install
+      - build:
+          requires:
+            - install
