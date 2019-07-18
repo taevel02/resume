@@ -1,13 +1,11 @@
 <template>
   <div class="content">
     <h2>Awards</h2>
-    <div class="awards" v-for="history of awards">
-      <!-- {{ history.year }} -->
-      <div class="level" v-for="award in history.awards">
+    <div class="awards" v-for="history of awards" :key="history">
+      <div class="level" v-for="award in history.awards" :key="award">
         {{ award }}
       </div>
     </div>
-  </div>
 </template>
 
 <script>

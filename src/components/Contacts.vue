@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <h2>Contacts</h2>
-    <div class="level is-mobile" v-for="contact in contacts">
+    <div class="level is-mobile" v-for="contact in contacts" :key="contact">
       <div class="level"><a class="level-item" :href="contact.href">{{ contact.text }}</a></div>
     </div>
   </div>

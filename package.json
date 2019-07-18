@@ -28,18 +28,18 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
-    "eslint-plugin-html": "^5.0.3",
-    "node-sass": "^4.9.0",
-    "parcel-bundler": "^1.8.1",
-    "standard": "^12.0.1",
-    "vue-template-compiler": "^2.5.16"
+    "eslint-plugin-html": "^6.0.0",
+    "node-sass": "^4.12.0",
+    "parcel-bundler": "^1.12.3",
+    "standard": "^13.0.2",
+    "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
-    "bulma": "^0.7.1",
+    "bulma": "^0.7.5",
     "font-awesome": "^4.7.0",
-    "vue": "^2.5.16",
-    "vue-hot-reload-api": "^2.3.0",
-    "vue-router": "^3.0.1",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-router": "^3.0.7",
     "webfontloader": "^1.6.28"
   }
 }

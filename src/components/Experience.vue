@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <h2>Experience</h2>
-    <div class="level is-mobile" v-for="experience in experiences">
+    <div class="level is-mobile" v-for="experience in experiences" :key="experience">
       <div class="level">{{ experience }}</div>
     </div>
   </div>
@@ -14,7 +14,7 @@ export default { data: () => ({ experiences }) };
 
 <style lang="scss" scoped>
 .level:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 h2 {

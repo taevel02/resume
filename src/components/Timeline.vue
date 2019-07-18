@@ -1,13 +1,13 @@
 <template>
   <div class="content">
-    <div class="projects" v-for="history of timeline">
+    <div class="projects" v-for="history of timeline" :key="history">
       <p class="title is-4">{{ history.year }}</p>
-      <div class="project" v-for="project in history.projects">
+      <div class="project" v-for="project in history.projects" :key="project">
         <div class="project__icons icon"><i class="project__icon fa fa-circle-o"></i></div>
         <div class="project__content"><a class="project__name" :href="project.href">{{ project.name }}</a>
           <p class="project__period">{{ project.period }}</p>
           <p class="project__description">{{ project.description }}</p>
-          <p class="project__tags"><span class="project__tag tag" v-for="s in project.tags">{{ s }}</span></p>
+          <p class="project__tags"><span class="project__tag tag" v-for="tag in project.tags" :key="tag">{{ tag }}</span></p>
         </div>
       </div>
     </div>

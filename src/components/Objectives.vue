@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <h2>Objectives</h2>
-    <div class="level is-mobile" v-for="objective in objectives">
+    <div class="level is-mobile" v-for="objective in objectives" :key="objective">
       <div class="level">{{ objective }}</div>
     </div>
   </div>

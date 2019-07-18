@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <h2>Skills</h2>
-    <div class="tag" v-for="skill in skills">{{ skill }}</div>
+    <div class="tag" v-for="skill in skills" :key="skill">{{ skill }}</div>
   </div>
 </template>
 
@@ -13,7 +13,8 @@ export default {
       "react.js",
       "sass",
       "babel",
-      "webpack"
+      "webpack",
+      "typescript"
     ]
   })
 };
