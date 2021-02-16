@@ -1,12 +1,25 @@
 {
   "name": "resume",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
+  "description": "Taehoon Kwon's Résumé page",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taevel02/resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": {
+    "name": "Taehoon",
+    "email": "taevel02@gmail.com"
+  },
+  "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
