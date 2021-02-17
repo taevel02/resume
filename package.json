@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint:css": "stylelint \"**/*.{css,js}\""
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,8 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "stylelint": "^13.10.0",
+    "stylelint-config-idiomatic-order": "^8.1.0"
   }
 }
