@@ -1,16 +1,30 @@
+@font-face {
+  font-family: "LeonSans-Bold";
+  src: url("../font/LeonSans-Bold.otf");
+}
+
+@font-face {
+  font-family: "LeonSans-Medium";
+  src: url("../font/LeonSans-Medium.otf");
+}
+
+@font-face {
+  font-family: "LeonSans-Light";
+  src: url("../font/LeonSans-Light.otf");
+}
+
+:root {
+  --black-color: #464950;
+  --pink-color: #ffc2bd;
+  --yellow-color: #f8db95;
+  --white-color: #ffffff;
+  --light-gray-color: #eeeef0;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  font-family: "LeonSans-Light", sans-serif;
+  background-color: var(--yellow-color);
 }
