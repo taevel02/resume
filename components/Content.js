@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 
 export default function Content(props) {
-  const { title, period, major, description } = props;
+  const { title, period, major, description, width } = props;
   return (
     <div
       css={{
         display: "flex",
-        width: "200px",
+        width,
         flexDirection: "column",
         justifyContent: "left",
       }}
@@ -20,7 +20,7 @@ export default function Content(props) {
       </h2>
       <h2
         css={{
-          margin: "4px 0",
+          margin: 0,
           fontFamily: "LeonSans-Thin",
         }}
       >
@@ -51,6 +51,7 @@ Content.propTypes = {
   period: PropTypes.string,
   major: PropTypes.string,
   description: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
 };
 
 Content.defaultProps = {

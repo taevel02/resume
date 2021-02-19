@@ -6,24 +6,15 @@ export default function InterestElement(props) {
     <div
       css={{
         display: "flex",
+        width: "64px",
+        margin: "8px",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-      <i
-        css={{
-          fontSize: "32px",
-        }}
-        className={icon}
-      />
-      <h3
-        css={{
-          margin: "8px 0",
-        }}
-      >
-        {name}
-      </h3>
+      <i css={{ fontSize: "32px" }} className={icon} />
+      <h3 css={{ margin: "8px 0" }}>{name}</h3>
     </div>
   );
 }

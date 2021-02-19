@@ -24,11 +24,12 @@ export default function LanguageElement(props) {
           height: "4px",
           backgroundColor: "var(--pink-color)",
           borderRadius: "15px",
+          marginBottom: "8px",
         }}
       >
         <div
           css={{
-            width: percentage,
+            width: `${percentage}%`,
             height: "100%",
             backgroundColor: "var(--black-color)",
             borderRadius: "15px",
