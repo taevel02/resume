@@ -1,15 +1,35 @@
-import styles from "../styles/Home.module.css";
+import "@fortawesome/fontawesome-free/css/fontawesome.css";
+import "@fortawesome/fontawesome-free/css/solid.css";
 
 import Background from "../components/Background";
+import Content from "../components/Content";
+import InterestElement from "../components/InterestElement";
+import LanguegeElement from "../components/LanguageElement";
 
 export default function Home() {
   return (
     <div>
       <Background />
-      <div className={styles.container}>
-        <p>
-          Magna dolore cillum enim ut sunt adipisicing ex consectetur ullamco.
-        </p>
+      <div
+        css={{
+          position: "relative",
+          display: "flex",
+          minHeight: "100vh",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "0 0.5rem",
+        }}
+      >
+        <Content
+          title="catholic kwandong university"
+          period="2021-currently"
+          major="computer education"
+          description="hello"
+        />
+        <Content description="test" />
+        <InterestElement icon="fas fa-headphones-alt" name="music" />
+        <LanguegeElement name="javascript" percentage="160px" />
       </div>
     </div>
   );

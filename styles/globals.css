@@ -32,14 +32,14 @@ body {
   margin: 0;
   background-color: var(--yellow-color);
   color: var(--black-color);
-  font-family: "LeonSans-Light", sans-serif;
+  font-family: "LeonSans-Light";
 }
 
 h1,
 h2,
 h3,
 p {
-  font-family: "LeonSans-Medium", sans-serif;
+  font-family: "LeonSans-Medium";
 }
 
 h1 {
@@ -64,7 +64,7 @@ p {
 }
 
 .light {
-  font-family: "LeonSans-Light", sans-serif;
+  font-family: "LeonSans-Light";
   letter-spacing: -0.05em;
 }
 

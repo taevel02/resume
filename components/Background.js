@@ -1,8 +1,14 @@
-import styles from "../styles/Background.module.css";
-
 export default function Background() {
   return (
-    <div className={styles.container}>
+    <div
+      css={{
+        position: "absolute",
+        overflow: "hidden",
+        width: "100%",
+        minHeight: "100vh",
+        textAlign: "center",
+      }}
+    >
       <svg
         width="100%"
         height="100vh"
