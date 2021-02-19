@@ -13,6 +13,11 @@
   src: url("../font/LeonSans-Light.otf");
 }
 
+@font-face {
+  font-family: "LeonSans-Thin";
+  src: url("../font/LeonSans-Thin.otf");
+}
+
 :root {
   --black-color: #464950;
   --pink-color: #ffc2bd;
