@@ -1,45 +1,50 @@
 {
   "name": "resume",
-  "version": "1.2",
+  "version": "2.0.0",
   "private": true,
   "description": "Taehoon Kwon's Résumé page",
-  "main": "index.html",
   "scripts": {
-    "test": "yarn run lint && yarn run build",
-    "lint": "standard --plugin html '**/*.{js,vue}'",
-    "build": "parcel build index.html --no-minify",
-    "start": "parcel index.html --open"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint:css": "stylelint \"**/*.{css,js}\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taehoon02/resume.git"
+    "url": "git+https://github.com/taevel02/resume.git"
   },
   "keywords": [
     "resume"
   ],
-  "author": "Taehoon <taevel02@gmail.com>",
+  "author": {
+    "name": "Taehoon",
+    "email": "taevel02@gmail.com"
+  },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/taehoon02/resume/issues"
-  },
-  "homepage": "https://github.com/taehoon02/resume#readme",
-  "devDependencies": {
-    "@vue/component-compiler-utils": "3.0.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-2": "^6.24.1",
-    "eslint-plugin-html": "^6.0.0",
-    "node-sass": "^4.12.0",
-    "parcel-bundler": "^1.12.3",
-    "standard": "^13.0.2",
-    "vue-template-compiler": "^2.6.10"
-  },
   "dependencies": {
-    "bulma": "^0.7.5",
-    "font-awesome": "^4.7.0",
-    "vue": "^2.6.10",
-    "vue-hot-reload-api": "^2.3.3",
-    "vue-router": "^3.0.7",
-    "webfontloader": "^1.6.28"
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "next": "10.0.6",
+    "prop-types": "^15.7.2",
+    "react": "17.0.1",
+    "react-device-detect": "^1.15.0",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.2.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.10.0",
+    "stylelint-config-idiomatic-order": "^8.1.0"
   }
 }

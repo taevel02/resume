@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "LeonSans-Bold";
+  src: url("../font/LeonSans-Bold.otf");
+}
+
+@font-face {
+  font-family: "LeonSans-Medium";
+  src: url("../font/LeonSans-Medium.otf");
+}
+
+@font-face {
+  font-family: "LeonSans-Light";
+  src: url("../font/LeonSans-Light.otf");
+}
+
+@font-face {
+  font-family: "LeonSans-Thin";
+  src: url("../font/LeonSans-Thin.otf");
+}
+
+:root {
+  --black-color: #464950;
+  --pink-color: #ffc2bd;
+  --yellow-color: #f8db95;
+  --white-color: #ffffff;
+  --light-gray-color: #eeeef0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--yellow-color);
+  color: var(--black-color);
+  font-family: "LeonSans-Light";
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "LeonSans-Medium";
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 14px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+p,
+a {
+  font-size: 11px;
+}
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.light {
+  font-family: "LeonSans-Light";
+  letter-spacing: -0.05em;
+}
+
+.titlecase {
+  text-transform: capitalize;
+}
