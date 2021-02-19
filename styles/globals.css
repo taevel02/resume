@@ -38,7 +38,8 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+a {
   font-family: "LeonSans-Medium";
 }
 
@@ -59,8 +60,14 @@ h3 {
   text-transform: uppercase;
 }
 
-p {
+p,
+a {
   font-size: 11px;
+}
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
 }
 
 .light {
