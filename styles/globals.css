@@ -29,3 +29,41 @@ body {
   color: var(--black-color);
   font-family: "LeonSans-Light", sans-serif;
 }
+
+h1,
+h2,
+h3,
+p {
+  font-family: "LeonSans-Medium", sans-serif;
+  line-height: auto;
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 14px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 11px;
+}
+
+.light {
+  font-family: "LeonSans-Light", sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.titlecase {
+  text-transform: capitalize;
+}
