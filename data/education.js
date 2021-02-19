@@ -3,7 +3,8 @@ export default [
     name: "catholic kwandong university",
     period: "2021 - currently",
     major: "computer education",
-    description: "Ex voluptate aliqua deserunt ea.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi ut eu nulla egestas. Vel ac felis, sit scelerisque eu, odio pretium aenean posuere.",
   },
   {
     name: "kwangdong high school",

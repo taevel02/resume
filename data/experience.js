@@ -25,7 +25,7 @@ export default [
     description: "Eiusmod laborum officia nulla nostrud aute ad.",
   },
   {
-    name: "pandongeditor",
+    name: "pandong editor",
     period: "2017",
     role: "scripter",
     description:

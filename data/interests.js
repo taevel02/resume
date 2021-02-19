@@ -1,22 +1,22 @@
 export default [
   {
     text: "music",
-    icon: "headphones-alt",
+    icon: "fas fa-headphones-alt",
   },
   {
     text: "reading",
-    icon: "book-open",
+    icon: "fas fa-book-open",
   },
   {
     text: "exercise",
-    icon: "running",
+    icon: "fas fa-running",
   },
   {
     text: "cooking",
-    icon: "utensils",
+    icon: "fas fa-utensils",
   },
   {
     text: "travel",
-    icon: "plane",
+    icon: "fas fa-plane",
   },
 ];
