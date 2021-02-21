@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { css } from "@emotion/react";
 import { isMobile } from "react-device-detect";
 
@@ -28,6 +29,14 @@ export default function Home() {
   if (!isMobile) {
     return (
       <div>
+        <Head>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>@taevel02</title>
+        </Head>
+
         <Background />
 
         <div
