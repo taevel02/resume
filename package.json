@@ -24,7 +24,7 @@
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
-    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "next": "10.0.8",
     "prop-types": "^15.7.2",
     "react": "17.0.1",
