@@ -6,7 +6,7 @@ Taehoon Kwon's résumé page
 
 ```bash
 $ git clone https://github.com/taevel02/resume.git
-$ cd resume & yarn install & yarn dev
+$ cd resume && yarn install && yarn dev
 ```
 
 ## License
