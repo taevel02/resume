@@ -1,50 +1,38 @@
 {
   "name": "resume",
-  "version": "2.0.0",
+  "version": "3.0",
   "private": true,
   "description": "Taehoon Kwon's Résumé page",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint:css": "stylelint \"**/*.{css,js}\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/taevel02/resume.git"
-  },
-  "keywords": [
-    "resume"
-  ],
-  "author": {
-    "name": "Taehoon",
-    "email": "taevel02@gmail.com"
+    "start": "webpack serve",
+    "build": "webpack",
+    "lint": "eslint \"./src/**/*.{ts,tsx,js,jsx}\" || true",
+    "lint:fix": "eslint --fix \"./src/**/*.{ts,tsx,js,jsx}\" || true"
   },
   "license": "MIT",
   "dependencies": {
-    "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.1.5",
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "next": "10.0.9",
-    "prop-types": "^15.7.2",
-    "react": "17.0.1",
-    "react-device-detect": "^1.17.0",
-    "react-dom": "17.0.1"
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@emotion/babel-plugin": "^11.2.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.20.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-babel": "^5.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "esbuild-loader": "^2.11.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "prettier": "^2.2.1",
-    "stylelint": "^13.10.0",
-    "stylelint-config-idiomatic-order": "^8.1.0"
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.31.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
