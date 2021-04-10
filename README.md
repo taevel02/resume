@@ -1,6 +1,6 @@
 # resume
 
-Taehoon Kwon's résumé page
+Taehoon Kwon's Résumé page
 
 ## Installation
 
