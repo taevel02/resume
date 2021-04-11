@@ -1,0 +1,32 @@
+[
+  {
+    "period": "December 2020 - Present",
+    "location": "Seoul, Korea",
+    "name": "Sullivan Project",
+    "role": "Secretariat",
+    "href": "https://sullivanproject.io/"
+  },
+  {
+    "period": "April 2020 - August 2020",
+    "name": "Sullivan Project (First half of 2020)",
+    "role": "Operator"
+  },
+  {
+    "period": "May 2019 - February 2020",
+    "location": "Gyeonggi-do, Korea",
+    "name": "Sullivan Project (4th)",
+    "role": "Teacher"
+  },
+  {
+    "period": "February 2019 - June 2019",
+    "location": "Gyeonggi-do, Korea",
+    "name": "DIMIGOIN",
+    "role": "Project Manager, Lead Front End Developer"
+  },
+  {
+    "period": "February 2019 - June 2019",
+    "location": "Muntinlupa, Philippines",
+    "name": "International Robot Olympiad",
+    "role": "Web Software Engineer"
+  }
+]

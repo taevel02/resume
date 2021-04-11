@@ -6,7 +6,7 @@
     "jsx": "react",
     "outDir": "./dist",
     "strict": true,
-    "typeRoots": ["./node_modules/@types","./src/types"],
+    "typeRoots": ["./node_modules/@types","./src/utils"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   }
