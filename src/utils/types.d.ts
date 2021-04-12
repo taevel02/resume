@@ -4,7 +4,7 @@ export interface IInfo {
 	description: string;
 }
 
-export interface IContact {
+export interface ISocial {
 	text: string;
 	href: string;
 }
