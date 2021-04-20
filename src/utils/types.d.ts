@@ -11,11 +11,9 @@ export interface ISocial {
 
 export interface IExperience {
 	period: string;
-	location?: string;
+	location: string;
 	name: string;
 	role: string;
-	description?: string;
-	href?: string;
 }
 
 export interface IAward {
