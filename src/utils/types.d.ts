@@ -6,6 +6,7 @@ export interface IInfo {
 
 export interface ISocial {
 	text: string;
+	icon: string;
 	href: string;
 }
 
