@@ -10,15 +10,17 @@ export interface ISocial {
 }
 
 export interface IExperience {
+	href?: string;
 	period: string;
 	location: string;
 	name: string;
 	role: string;
+	description?: string;
 }
 
-export interface IAward {
-	date: string;
-	content: string;
-	project?: string;
-	host?: string;
+export interface IProject {
+	href?: string;
+	project: string;
+	period: string;
+	description: string;
 }

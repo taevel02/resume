@@ -1,32 +1,50 @@
 [
   {
+    "href": "https://sullivanproject.io/",
     "period": "December 2020 - Present",
     "location": "Seoul, Korea",
-    "name": "Sullivan Project",
-    "role": "Secretariat"
+    "name": "Sullivan Project (First half of 2021)",
+    "role": "Lead Secretariat",
+    "description": ""
   },
   {
+    "href": "",
     "period": "April 2020 - August 2020",
     "location": "Seoul, Korea",
     "name": "Sullivan Project (First half of 2020)",
-    "role": "Operator"
+    "role": "Operator",
+    "description": ""
   },
   {
+    "href": "",
     "period": "May 2019 - February 2020",
     "location": "Gyeonggi-do, Korea",
     "name": "Sullivan Project (4th)",
-    "role": "Teacher"
+    "role": "Teacher",
+    "description": ""
   },
   {
+    "href": "https://github.com/dimigoin/dimigoin-front",
     "period": "February 2019 - June 2019",
     "location": "Gyeonggi-do, Korea",
     "name": "DIMIGOIN",
-    "role": "Project Manager, Lead Front End Developer"
+    "role": "Project Owner & Manager, Lead Front End Developer",
+    "description": "한국디지털미디어고등학교 시스템 전산화 프로젝트로 인터넷 강의 신청 서비스와 기타 신청 서비스, 교사의 관리 페이지를 개발, 보완했습니다."
   },
   {
-    "period": "February 2019 - June 2019",
+    "href": "https://github.com/taevel02/new-weaver-sw",
+    "period": "August 2018 - December 2018",
     "location": "Muntinlupa, Philippines",
-    "name": "International Robot Olympiad",
-    "role": "Web Software Engineer"
+    "name": "Weaver",
+    "role": "Web Software Engineer",
+    "description": "바다 생태계 보호 로봇의 관리 웹페이지를 개발했습니다. 국내 로봇 대회 창작 부문에서 동상을, 국제 로봇 대회 창작 부문에서 기술상을 수상했습니다."
+  },
+  {
+    "href": "https://github.com/taevel02/green-tea-bingsu",
+    "period": "October 2018",
+    "location": "Gyeonggi-do, Korea",
+    "name": "Green Tea Bingsu",
+    "role": "Front-end Engineer",
+    "description": "도서관 열람실 좌석 관리를 자동화한 웹서비스의 프로토타입을 개발했습니다. 화성시 동탄중앙이음터 ICT 메이커톤에서 대상을 수상했습니다."
   }
 ]
