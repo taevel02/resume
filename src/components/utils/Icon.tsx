@@ -6,22 +6,18 @@ type IconProps = {
 	href?: string;
 	icon: string;
 	className?: string;
+	fontSize: string;
 };
 
-const Icon: React.FC<IconProps> = ({ href, icon, className }) => {
+const Icon: React.FC<IconProps> = ({ href, icon, className, fontSize }) => {
 	return (
 		<a
 			css={{
-				width: '12px',
-				fontSize: '12px',
+				width: '100%',
+				fontSize: `${fontSize}`,
 				textAlign: 'center',
 				textDecoration: 'none',
 				color: '#eaeff9',
-				// transition: 'color 0.35s ease-out',
-
-				// '&:hover': {
-				// 	color: '#111',
-				// },
 			}}
 			href={href}
 			target="_blank"
