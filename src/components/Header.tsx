@@ -7,10 +7,12 @@ const { title, subtitle, description }: IInfo = require('../data/info.json');
 const Section = styled('div')`
 	display: flex;
 	flex-direction: column;
+	padding: 0 0 32px 15px;
 `;
 
 const Title = styled('span')`
 	display: block;
+	margin-top: 80px;
 	margin-bottom: 56px;
 	font-size: 32px;
 	font-weight: 400;
