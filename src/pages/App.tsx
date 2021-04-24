@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import Header from '../components/Header';
 import Experience from '../components/Experience';
 
+import SubTitle from '../components/utils/SubTitle';
 import { ISocial, IExperience } from '../utils/types';
 
 const socials: ISocial[] = require('../data/social.json');
@@ -18,6 +19,12 @@ const Content = styled('div')`
 	> :not(:last-child) {
 		margin-bottom: 50px;
 	}
+`;
+
+const Skill = styled('div')`
+	font-size: 12px;
+	font-weight: 200;
+	line-height: 14px;
 `;
 
 const Footer = styled('footer')`
@@ -37,6 +44,10 @@ const App: React.FC = () => {
 		<Content>
 			<Header socials={socials} />
 			<Experience experiences={experiences} />
+			<Skill>
+				<SubTitle>Skills</SubTitle>
+				<span>Javascript, Typescript, React, Vue.js, HTML, CSS(Sass)</span>
+			</Skill>
 			<Footer>
 				<FooterText>BY. Taehoon</FooterText>
 			</Footer>
