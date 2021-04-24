@@ -1,13 +1,8 @@
 [
   {
-    "text": "email",
+    "text": "e-mail",
     "icon": "fas fa-envelope",
     "href": "mailto:taevel02@gmail.com"
-  },
-  {
-    "text": "instagram",
-    "icon": "fab fa-instagram",
-    "href": "https://www.instagram.com/taevel02"
   },
   {
     "text": "github",
@@ -18,5 +13,10 @@
     "text": "brunch",
     "icon": "fas fa-paperclip",
     "href": "https://brunch.co.kr/@taevel02"
+  },
+  {
+    "text": "instagram",
+    "icon": "fab fa-instagram",
+    "href": "https://www.instagram.com/taevel02"
   }
 ]
