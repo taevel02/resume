@@ -3,20 +3,23 @@ import * as React from 'react';
 import { jsx } from '@emotion/react';
 import styled from '@emotion/styled';
 
+import SubTitle from './utils/SubTitle';
 import Icon from './utils/Icon';
 import { IExperience } from '../utils/types';
 
 const Section = styled('div')`
 	display: flex;
-	margin: 6px 0;
 	flex-direction: column;
 	font-size: 12px;
 	font-weight: 200;
 	text-align: left;
 
+	&:not(:last-child) {
+		margin-bottom: 6px;
+	}
+
 	> span {
 		line-height: 16px;
-		padding: 0 0 6px 15px;
 	}
 `;
 
@@ -31,8 +34,9 @@ type ExperienceProps = {
 const Experience: React.FC<ExperienceProps> = ({ experiences }) => {
 	return (
 		<div>
-			{experiences.map(({ href, period, location, name, role, description }) => (
-				<Section>
+			<SubTitle>EXPERIENCE</SubTitle>
+			{experiences.map(({ href, period, location, name, role, description }, idx) => (
+				<Section key={`section-${idx.toFixed()}`}>
 					<span css={{ color: '#aaa' }}>
 						{period} / {location}
 					</span>
