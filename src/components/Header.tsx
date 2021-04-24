@@ -1,13 +1,14 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
-import { IInfo } from '../utils/types';
+
+import SubTitle from './utils/SubTitle';
+import { IInfo, ISocial } from '../utils/types';
 
 const { title, subtitle, description }: IInfo = require('../data/info.json');
 
 const Section = styled('div')`
 	display: flex;
 	flex-direction: column;
-	padding: 0 0 32px 15px;
 `;
 
 const Title = styled('span')`
@@ -15,19 +16,9 @@ const Title = styled('span')`
 	margin-top: 80px;
 	margin-bottom: 56px;
 	font-size: 32px;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 42px;
 	color: #1c1c1c !important;
-`;
-
-const Subtitle = styled('span')`
-	display: block;
-	padding-bottom: 4px;
-	font-size: 13px;
-	font-weight: 700;
-	line-height: 24px;
-	color: #111;
-	text-transform: uppercase;
 `;
 
 const Description = styled('span')`
@@ -37,12 +28,48 @@ const Description = styled('span')`
 	line-height: 20px;
 `;
 
-const Header: React.FC = () => {
+const Socials = styled('div')`
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+
+	> a {
+		color: #426fc9;
+		font-size: 14px;
+		text-decoration: none;
+
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+`;
+
+type HeaderProps = {
+	socials: ISocial[];
+};
+
+const Header: React.FC<HeaderProps> = ({ socials }) => {
 	return (
 		<Section>
 			<Title>{title}</Title>
-			<Subtitle>{subtitle}</Subtitle>
-			<Description>{description}</Description>
+			<SubTitle>{subtitle}</SubTitle>
+			<Description>
+				{description.split('\n').map((line, idx) => {
+					return (
+						<span key={`text-${idx.toFixed()}`}>
+							{line}
+							<br />
+						</span>
+					);
+				})}
+			</Description>
+			<Socials>
+				{socials.map(({ text, href }, idx) => (
+					<a key={`text-${idx.toFixed()}`} href={href}>
+						{text}
+					</a>
+				))}
+			</Socials>
 		</Section>
 	);
 };
