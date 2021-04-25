@@ -17,7 +17,7 @@ const Icon: React.FC<IconProps> = ({ href, icon, className, fontSize }) => {
 				fontSize: `${fontSize}`,
 				textAlign: 'center',
 				textDecoration: 'none',
-				color: '#eaeff9',
+				color: '#426fc9',
 			}}
 			href={href}
 			target="_blank"
