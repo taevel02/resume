@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const { ESBuildMinifyPlugin } = require('esbuild-loader');
 
 module.exports = {
 	mode: 'development',
@@ -8,18 +9,6 @@ module.exports = {
 	output: {
 		filename: 'main.js',
 		path: `${__dirname}/dist`,
-	},
-
-	optimization: {
-		splitChunks: {
-			cacheGroups: {
-				commons: {
-					test: /[\\/]node_modules[\\/]/,
-					name: 'vendors',
-					chunks: 'all',
-				},
-			},
-		},
 	},
 
 	devtool: 'source-map',
@@ -51,6 +40,15 @@ module.exports = {
 				test: /\.scss$/,
 				use: ['style-loader', 'css-loader', 'sass-loader'],
 			},
+		],
+	},
+
+	optimization: {
+		minimizer: [
+			new ESBuildMinifyPlugin({
+				target: 'es2015',
+				css: true,
+			}),
 		],
 	},
 
