@@ -1,0 +1,28 @@
+name: CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Install packages
+        uses: bahmutov/npm-install@v1
+        with:
+          install-command: yarn install --frozen-lockfile --silent
+        
+      - name: Build page
+        run: yarn build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        with:
+          deploy_key: ${{ secrets.ACTION_DEPLOY_KEY }}
+          publish_dir: ./dist
