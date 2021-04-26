@@ -1,5 +1,8 @@
 const webpack = require('webpack');
 const { ESBuildMinifyPlugin } = require('esbuild-loader');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
@@ -38,7 +41,16 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				use: ['style-loader', 'css-loader', 'sass-loader'],
+				use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+			},
+			{
+				test: /\.html$/,
+				use: [
+					{
+						loader: 'html-loader',
+						options: { minimize: true },
+					},
+				],
 			},
 		],
 	},
@@ -52,5 +64,15 @@ module.exports = {
 		],
 	},
 
-	plugins: [new webpack.HotModuleReplacementPlugin()],
+	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
+		new HtmlWebpackPlugin({
+			template: 'index.html',
+			filename: 'index.html',
+		}),
+		new MiniCssExtractPlugin({
+			filename: 'style.css',
+		}),
+		new CleanWebpackPlugin(),
+	],
 };
