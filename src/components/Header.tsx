@@ -65,7 +65,7 @@ const Header: React.FC<HeaderProps> = ({ socials }) => {
 			</Description>
 			<Socials>
 				{socials.map(({ text, href }, idx) => (
-					<a key={`text-${idx.toFixed()}`} href={href}>
+					<a key={`text-${idx.toFixed()}`} href={href} target="_blank" rel="noreferrer">
 						{text}
 					</a>
 				))}
