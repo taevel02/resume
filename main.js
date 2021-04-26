@@ -2057,7 +2057,9 @@ const Header = ({socials}) => {
     }, line, /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null));
   })), /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(Socials, null, socials.map(({text, href}, idx) => /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     key: `text-${idx.toFixed()}`,
-    href
+    href,
+    target: "_blank",
+    rel: "noreferrer"
   }, text))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
@@ -2602,7 +2604,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1619457524315
+      // 1619461759274
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -2621,7 +2623,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1619457524324
+      // 1619461759266
       var cssReload = __webpack_require__(/*! ./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -33760,7 +33762,7 @@ module.exports = JSON.parse('[{"text":"e-mail","icon":"fas fa-envelope","href":"
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("4effeb751f45875a6b7f")
+/******/ 		__webpack_require__.h = () => ("cddc4458f53afb3db682")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
