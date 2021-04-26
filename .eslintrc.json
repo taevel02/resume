@@ -1,40 +1,51 @@
 {
-    "env": {
-      "browser": true,
-      "es6": true,
-      "node": true
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+
+  "parser": "@typescript-eslint/parser",
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "parser": "babel-eslint",
-    "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "airbnb",
-      "plugin:prettier/recommended"
-    ],
-    "settings": {
-      "react": {
-        "version": "detect"
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".d.ts", ".ts", ".tsx"]
       }
-    },
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "ecmaVersion": 2018,
-      "sourceType": "module"
-    },
-    "plugins": ["react", "react-hooks", "prettier"],
-    "rules": {
-      "react/react-in-jsx-scope": 0,
-      "react/prefer-stateless-function": 0,
-      "react/jsx-filename-extension": 0,
-      "react/jsx-one-expression-per-line": 0,
-      "react/jsx-props-no-spreading": 0,
-      "react/prop-types": 0,
-      "no-nested-ternary": 0
-    },
-    "globals": {
-        "React": "writable"
     }
+  },
+
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "import/extensions": "off",
+    "no-use-before-define": "off",
+    "react/jsx-indent": [2, "tab"],
+    "react/jsx-indent-props": [2, "tab"],
+    "react/prop-types": "off",
+    "@typescript-eslint/no-use-before-define": ["error"]
   }
-  
+}
