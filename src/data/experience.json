@@ -31,7 +31,7 @@
     "period": "August 2018 - December 2018",
     "location": "Muntinlupa, Philippines",
     "name": "Weaver",
-    "role": "Web Software Engineer",
+    "role": "Software Engineer",
     "description": "바다 생태계 보호 로봇의 관리 웹페이지를 개발했습니다. 국내 로봇 대회 창작 부문에서 동상을, 국제 로봇 대회 창작 부문에서 기술상을 수상했습니다."
   },
   {
@@ -39,7 +39,7 @@
     "period": "October 2018",
     "location": "Gyeonggi-do, Korea",
     "name": "Green Tea Bingsu",
-    "role": "Front-end Engineer",
+    "role": "Front-end Developer",
     "description": "도서관 열람실 좌석 관리를 자동화한 웹서비스의 프로토타입을 개발했습니다. 화성시 동탄중앙이음터 ICT 메이커톤에서 대상을 수상했습니다."
   }
 ]
