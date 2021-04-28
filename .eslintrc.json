@@ -1,51 +1,27 @@
 {
   "env": {
-    "browser": true,
-    "es6": true
+    "browser": true
   },
-
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb",
-    "plugin:prettier/recommended"
-  ],
-
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-
-  "parser": "@typescript-eslint/parser",
-
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
-
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["src"],
-        "extensions": [".d.ts", ".ts", ".tsx"]
-      }
-    }
-  },
-
   "plugins": [
     "react",
-    "@typescript-eslint"
+    "jsx-a11y",
+    "import"
   ],
-
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/eslint-plugin",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "rules": {
+    "prettier/prettier": "error",
+    "react/prefer-stateless-function": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-    "import/extensions": "off",
-    "no-use-before-define": "off",
-    "react/jsx-indent": [2, "tab"],
-    "react/jsx-indent-props": [2, "tab"],
     "react/prop-types": "off",
-    "@typescript-eslint/no-use-before-define": ["error"]
+    "react/jsx-one-expression-per-line": "off"
   }
 }
