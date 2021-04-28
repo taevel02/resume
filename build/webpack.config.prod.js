@@ -1,34 +1,24 @@
-const webpack = require('webpack');
 const { ESBuildMinifyPlugin } = require('esbuild-loader');
-const HtmlPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-	mode: 'development',
-
+	mode: 'production',
 	entry: './src/index.tsx',
-
 	output: {
 		filename: 'main.js',
-		path: `${__dirname}/dist`,
+		path: `${__dirname}/../dist`,
 	},
-
-	devtool: 'source-map',
-
-	devServer: {
-		historyApiFallback: true,
-		inline: true,
-		hot: true,
-		port: 3000,
-		contentBase: './',
-		publicPath: '/dist',
-	},
-
 	resolve: {
 		extensions: ['.ts', '.tsx', '.js'],
 	},
-
+	devtool: 'source-map',
+	devServer: {
+		historyApiFallback: true,
+		port: 3000,
+		publicPath: '/dist',
+	},
 	module: {
 		rules: [
 			{
@@ -45,7 +35,6 @@ module.exports = {
 			},
 		],
 	},
-
 	optimization: {
 		minimizer: [
 			new ESBuildMinifyPlugin({
@@ -54,10 +43,8 @@ module.exports = {
 			}),
 		],
 	},
-
 	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
-		new HtmlPlugin({
+		new HtmlWebpackPlugin({
 			title: 'taehoon kwon',
 			template: 'index.html',
 			filename: 'index.html',
