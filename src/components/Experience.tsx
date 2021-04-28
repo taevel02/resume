@@ -15,7 +15,7 @@ const Section = styled('div')`
 	text-align: left;
 
 	&:not(:last-child) {
-		margin-bottom: 6px;
+		margin-bottom: 8px;
 	}
 
 	> span {
@@ -25,6 +25,7 @@ const Section = styled('div')`
 
 const LinkIcon = styled(Icon)`
 	transition: color 0.35s ease-out;
+	padding-right: 4px;
 `;
 
 type ExperienceProps = {
@@ -40,7 +41,7 @@ const Experience: React.FC<ExperienceProps> = ({ experiences }) => {
 					<span css={{ color: '#aaa' }}>
 						{period} / {location}
 					</span>
-					<span css={{ fontSize: '14px' }}>
+					<span css={{ display: 'flex', fontSize: '14px' }}>
 						{href !== undefined ? (
 							<LinkIcon
 								css={{

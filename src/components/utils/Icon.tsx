@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import * as React from 'react';
 import { jsx } from '@emotion/react';
+import openNewWindow from '../../utils/openNewWindow';
 
 type IconProps = {
 	href?: string;
@@ -11,20 +12,24 @@ type IconProps = {
 
 const Icon: React.FC<IconProps> = ({ href, icon, className, fontSize }) => {
 	return (
-		<a
+		<button
 			css={{
-				width: '100%',
+				background: 'inherit',
+				boxShadow: 'none',
+				border: 0,
+				borderRadius: 0,
+				padding: 0,
+				overflow: 'visible',
 				fontSize: `${fontSize}`,
 				textAlign: 'center',
 				textDecoration: 'none',
+				cursor: `${href ? 'pointer' : 'auto'}`,
 				color: '#426fc9',
 			}}
-			href={href}
-			target="_blank"
-			rel="noreferrer"
+			onClick={() => openNewWindow(href)}
 		>
 			<i className={`${icon} ${className}`} />
-		</a>
+		</button>
 	);
 };
 
