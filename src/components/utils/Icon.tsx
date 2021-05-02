@@ -13,6 +13,7 @@ type IconProps = {
 const Icon: React.FC<IconProps> = ({ href, icon, className, fontSize }) => {
 	return (
 		<button
+			type="button"
 			css={{
 				background: 'inherit',
 				boxShadow: 'none',
