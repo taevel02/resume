@@ -14,6 +14,7 @@ const Icon: React.FC<IconProps> = ({ href, icon, className, fontSize }) => {
 	return (
 		<button
 			type="button"
+			aria-label={icon}
 			css={{
 				background: 'inherit',
 				boxShadow: 'none',

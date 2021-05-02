@@ -38,7 +38,7 @@ const Experience: React.FC<ExperienceProps> = ({ experiences }) => {
 			<SubTitle>EXPERIENCE</SubTitle>
 			{experiences.map(({ href, period, location, name, role, description }, idx) => (
 				<Section key={`section-${idx.toFixed()}`}>
-					<span css={{ color: '#aaa' }}>
+					<span>
 						{period} / {location}
 					</span>
 					<span css={{ display: 'flex', fontSize: '14px' }}>

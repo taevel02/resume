@@ -35,7 +35,7 @@ const FooterText = styled('span')`
 	font-size: 11px;
 	font-weight: 100;
 	text-rendering: optimizeLegibility;
-	color: #aaa;
+	color: #666;
 	line-height: 13px;
 `;
 
