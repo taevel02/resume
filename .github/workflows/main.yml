@@ -16,7 +16,7 @@ jobs:
       - name: Install packages
         uses: bahmutov/npm-install@v1
         with:
-          install-command: yarn install --frozen-lockfile --silent
+          install-command: yarn install --immutable --silent
         
       - name: Build page
         run: yarn build
