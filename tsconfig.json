@@ -1,13 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["es6", "DOM"],
-    "jsx": "react",
-    "outDir": "./dist",
-    "strict": true,
-    "typeRoots": ["./node_modules/@types","./src/utils"],
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
-  }
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"lib": ["es6", "DOM"],
+		"jsx": "react",
+		"outDir": "./dist",
+		"strict": true,
+		// "typeRoots": ["./node_modules/@types", "./src/utils"],
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true
+	}
 }

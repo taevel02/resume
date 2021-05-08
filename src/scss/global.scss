@@ -2,22 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
 
 @font-face {
-  font-family: 'Noto Sans KR';
-  src: local('Noto Sans KR');
-  unicode-range: U+AC00-D7AF;
+	font-family: 'Noto Sans KR';
+	src: local('Noto Sans KR');
+	unicode-range: U+AC00-D7AF;
 }
 
 html {
-  background-color: #fefefe;
-  color: #666;
+	background-color: #fefefe;
+	color: #666;
 }
 
 ::selection {
-  background: #eaeff9;
+	background: #eaeff9;
 }
 
 :root {
-  margin: 2rem;
-  font-family: 'Inter', 'Noto Sans KR', sans-serif;
-  overflow-x: hidden;
+	margin: 2rem;
+	font-family: 'Inter', 'Noto Sans KR', sans-serif;
+	overflow-x: hidden;
 }
