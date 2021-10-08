@@ -655,9 +655,9 @@
     tslib "^1.13.0"
 
 "@yarnpkg/fslib@^2.5.1":
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/fslib/-/fslib-2.5.1.tgz#3e99dccf48790697d52f1b1ac133dce218424521"
-  integrity sha512-Y360rwoaUBCF8i9nRepyuFQFNF5OybHafO4PQ5Pf68sT3H6ulmT2t/KjdtMey8zyJkDu5qrC3IgHk0c7zWRIrg==
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/fslib/-/fslib-2.5.2.tgz#6dcfbe12fe2d1bce14cb6e4518054abb1dd7c48d"
+  integrity sha512-Tonb3jXsxsGB+uTlzG6r2zcAUekIG0FfCZV/kM14fPvTE3Z1wC0cMtiD4IUzxSqyhC/zR+T1pLaTPT3xDzSvqg==
   dependencies:
     "@yarnpkg/libzip" "^2.2.2"
     tslib "^1.13.0"
