@@ -608,7 +608,7 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@yarnpkg/core@^3.0.0", "@yarnpkg/core@^3.0.0-rc.13":
+"@yarnpkg/core@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@yarnpkg/core/-/core-3.0.0.tgz#64d0fed65eccf1c3d3b3f34b9a903ac9206f8f3d"
   integrity sha512-daPBR5u41lrxMLKt3boYIpt4a9Xo7xR0j5NTFVCMvpsq+fLWGpNhyfkMWautGFR0INu7FTT0FlZWXEtwCVN+Eg==
@@ -646,10 +646,18 @@
     tslib "^1.13.0"
     tunnel "^0.0.6"
 
-"@yarnpkg/fslib@^2.5.0", "@yarnpkg/fslib@^2.5.0-rc.13":
+"@yarnpkg/fslib@^2.5.0":
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@yarnpkg/fslib/-/fslib-2.5.0.tgz#d0f4b0d70d89ab2de5ad3349e59cfde87a7e6c1c"
   integrity sha512-xkKmuW3HwQeWOPqOhBCbDjTGbgimP/VWN2bPpx4FnfgbVj1xjULyOtZR5h9p49jA7IIZsccG91+Ad9kLZ2A4DA==
+  dependencies:
+    "@yarnpkg/libzip" "^2.2.2"
+    tslib "^1.13.0"
+
+"@yarnpkg/fslib@^2.5.1":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/fslib/-/fslib-2.5.1.tgz#3e99dccf48790697d52f1b1ac133dce218424521"
+  integrity sha512-Y360rwoaUBCF8i9nRepyuFQFNF5OybHafO4PQ5Pf68sT3H6ulmT2t/KjdtMey8zyJkDu5qrC3IgHk0c7zWRIrg==
   dependencies:
     "@yarnpkg/libzip" "^2.2.2"
     tslib "^1.13.0"
@@ -670,7 +678,7 @@
     "@types/emscripten" "^1.38.0"
     tslib "^1.13.0"
 
-"@yarnpkg/nm@^2.4.1-rc.4":
+"@yarnpkg/nm@^2.4.1":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@yarnpkg/nm/-/nm-2.4.1.tgz#7c1747c14e7a0b1115080cae45c772f6b704799e"
   integrity sha512-adfnZOdLOeFv8fTQI7UgBDdKURddm54LrP4rTrs1jAjsdVE/00ow9+qY24QWxtgQjNCzxHkZARjJy8nDPzk9Eg==
@@ -696,14 +704,14 @@
     resolve.exports "^1.0.2"
     tslib "^1.13.0"
 
-"@yarnpkg/pnpify@^3.0.0-rc.3":
-  version "3.0.0-rc.14"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/pnpify/-/pnpify-3.0.0-rc.14.tgz#f407f62bb267e476817f08169877ff846ec0a33d"
-  integrity sha512-IGQJNPpeRtQSxOesetCduEdm3YJrvRAWQnXiLOBaSS1VGOKE+9+r3bKGPqk+0qpYQ2BFpTXo9aNpAUvNyp7zRA==
+"@yarnpkg/pnpify@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/pnpify/-/pnpify-3.0.1.tgz#02354429f1133c210f94f29b0cae834fefca8afc"
+  integrity sha512-S/qW7PVGE+le1UvBWs+bPL8vYo1ABuXKHIQpveDDcaK0AXGRXAHMNiUQj8LnVfg08q/+JutPH0V5xaODSgPhmA==
   dependencies:
-    "@yarnpkg/core" "^3.0.0-rc.13"
-    "@yarnpkg/fslib" "^2.5.0-rc.13"
-    "@yarnpkg/nm" "^2.4.1-rc.4"
+    "@yarnpkg/core" "^3.0.0"
+    "@yarnpkg/fslib" "^2.5.1"
+    "@yarnpkg/nm" "^2.4.1"
     clipanion "^3.0.1"
     cross-spawn "7.0.3"
     tslib "^1.13.0"
@@ -1325,7 +1333,7 @@ chokidar@^2.1.8:
     anymatch "^2.0.0"
     async-each "^1.0.1"
     braces "^2.3.2"
-    glob-parent "^5.1.2"
+    glob-parent "^3.1.0"
     inherits "^2.0.3"
     is-binary-path "^1.0.0"
     is-glob "^4.0.0"
