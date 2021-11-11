@@ -15,7 +15,7 @@
 		"@emotion/styled": "^11.3.0",
 		"@fortawesome/fontawesome-free": "^5.15.3",
 		"@types/react": "^17.0.3",
-		"@types/react-dom": "^17.0.3",
+		"@types/react-dom": "^17.0.10",
 		"@yarnpkg/pnpify": "^3.0.0",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2"
